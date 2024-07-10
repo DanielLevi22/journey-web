@@ -1,16 +1,16 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
-import { CreateTrip } from "./pages/create-trip"
-import { TripDetails } from "./pages/trip-details"
+import { CreateTripPage } from "./pages/create-trip"
+import { TripDetailsPage } from "./pages/trip-details"
 
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <CreateTrip />,
+    element: <CreateTripPage />,
   },
   {
     path: "/trips/:tripId",
-    element: <TripDetails />,
+    element: <TripDetailsPage />,
   }
 ])
 
